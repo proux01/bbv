@@ -111,7 +111,7 @@ Theorem div2_minus_2 : forall n k,
   -> div2 (n - 2 * k) = div2 n - k.
   induction n as [n] using strong; intros.
 
-  do 2 (destruct n; simpl in *; intuition; repeat rewrite untimes2 in *).
+  do 2 (destruct n; simpl in *; intuition; repeat rewrite untimes2 in * ).
   destruct k; simpl in *; intuition.
 
   destruct k; simpl in *; intuition.
